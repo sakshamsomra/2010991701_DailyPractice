@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function fnCheck(){
+            let n1 = document.getElementById("n1").value;
+
+            if(n1%2 == 0){
+                document.getElementById("p1").innerHTML = "even number";
+            }
+            else{
+                document.getElementById("p1").innerHTML = "odd number";
+            }
+        }
+
+        function fnBool(){
+            document.getElementById("p1").innerHTML = Boolean(10>9);
+        }
+
+        function fnClick(){
+            var n1 = document.getElementById("n1").value;
+            var n2 = document.getElementById("n2").value;
+        
+            if(!isNaN() && !isNaN(n2)){
+                n1 = Number(n1);
+                n2 = Number(n2);
+                document.getElementById("p1").innerHTML = (n1 + n2);
+
+            }
+            else{
+                document.getElementById("p1").innerHTML = "<span style = 'color: red'>please enter numeric value<span/>";
+            }
+        } 
+    </script>
+</head>
+<body>
+    N1 <input type="text" name = "n1" id = "n1" />
+    
+    <br>
+    <button onclick="fnCheck()">Click</button>
+    <p id = "p1"></p>
+
+    
+</body>
+</html>

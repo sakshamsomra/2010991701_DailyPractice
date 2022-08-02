@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function fnDis(){
+            let mem = document.getElementById("mem").value;
+            let balls = document.getElementById("balls").value;
+
+            var T = balls/mem;
+            
+            if(balls%mem == 0){
+              document.getElementById("p1").innerHTML = T;
+            }
+            else{
+                document.getElementById("p1").innerHTML = Text = "remaining" balls%mem;
+
+            }
+
+        }
+    </script>
+</head>
+<body>
+    MEMBERS <input type="text" name = "mem" id = "mem">
+    BALLS <input type="text" name = "balls" id = "balls">
+    <button onclick="fnDis()">Click</button>
+
+    <p id = "p1"></p>
+
+    
+</body>
+</html>
